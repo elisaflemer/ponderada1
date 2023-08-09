@@ -1,14 +1,14 @@
-import Image from 'next/image'
 import { BsSun } from 'react-icons/bs';
+import profile from '../assets/thumbnail.png'
 
 const NavBar = () => {
   return (
     <div className="flex justify-between w-full items-center px-14 pt-5">
-        <Image src="/img/thumbnail.png" alt="Naruto" width={50} height={50} className='rounded-full shadow-md p-[1px] cursor-pointer'/>
+        <img src={profile} alt="Naruto" width={50} height={50} className='rounded-full shadow-md p-[1px] cursor-pointer'/>
         <div className='flex justify-between rounded-full shadow-sm px-8 py-2 items-center border-[1px] border-grey font-xs gap-7 font-light'>
             <h3 className='font-bold cursor-pointer hover:text-[#F56E45]'>Recommend!</h3>
             <div className='flex items-center justify-center gap-1'>
-              🍥
+              <span>🍥</span>
               <span className='font-bold text-xs text-gray-500'>0</span>
             </div>
         </div>

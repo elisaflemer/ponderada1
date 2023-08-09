@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const Bio = () => {
   return (
     <div className="w-full px-14 pt-24 pb-20">

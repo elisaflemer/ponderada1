@@ -1,10 +1,10 @@
-import Image from "next/image";
+import fullNaruto from "../assets/full.jpg";
 
 const Highlights = () => {
   return (
     <div className="px-14 pt-20">
-      <Image
-        src="/img/full.jpg"
+      <img
+        src={fullNaruto}
         alt="Naruto"
         width={800}
         height={1800}
@@ -12,9 +12,9 @@ const Highlights = () => {
       />
       <div className="mt-6">
         <h2 className="font-bold text-3xl">Naruto Uzumaki</h2>
-        <span className="italic">
+        <span className="italic ">
           <p>🍥 Hidden Leaf Village | Hokage-in-Training</p>
-          <p>📧 Contact: HokageTower123@leafmail.com</p>
+          <p className="mb-5">📧 Contact: HokageTower123@leafmail.com</p>
         </span>
         <hr></hr>
         <h3 className="font-semibold text-xl text-gray-700 mt-5 mb-1">Skills</h3>
