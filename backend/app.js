@@ -21,6 +21,7 @@ app.get("/kudo/new", async (req, res) => {
   try {
     const kudo = new Kudo({});
     await kudo.save();
+    console.log('hi')
     res.status(201).json({ message: "Kudo added successfully" });
   } catch (error) {
     res.status(500).json({ message: "Error adding kudo" });
