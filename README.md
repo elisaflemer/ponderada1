@@ -17,6 +17,8 @@ Isso permitirá o download das imagens de todos os serviços, que já estão dis
 - localhost:80 para o frontend.
 - localhost:5000 para a API (use /kudos para ver a contagem de recomendações e kudos/new para adicionar um novo kudo).
 - localhost:8081 para visualizar o banco de dados com o MongoExpress.
+
+P.S: Eu acabei não usando o MongoExpress no desenvolvimento, porque fiz todos os modelos por NodeJS. Só o utilizei porque queria testar especificamente a parte de conexão de um container no outro.
   
 ## Processo de Desenvolvimento
 As tecnologias foram escolhidas com base no estudo de desenvolvimento fullstack nos últimos meses. O desafio consistiu em containerizar essas tecnologias, em vez de adotar uma abordagem mais comum com Python e HTML estático.
