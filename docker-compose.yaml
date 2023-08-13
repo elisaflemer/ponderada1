@@ -14,13 +14,13 @@ services:
     environment:
     - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
     - ME_CONFIG_MONGODB_ADMINPASSWORD=password
-    - ME_CONFIG_MONGODB_SERVER=mongodb
+    - ME_CONFIG_MONGODB_SERVER=mongo
     depends_on:
       - mongo
   frontend:
     image: 'elisaflemer/narutofrontend:latest'
     ports:
-      - "5173:5173"
+      - "80:5173"
     depends_on:
       - backend
   backend:
